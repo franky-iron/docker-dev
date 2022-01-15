@@ -4,44 +4,7 @@
 ### 本地 hosts 文件配置参考 请先配置本地host
 
 ```bash
-# for weixiuhui dev
-127.0.0.1       fa.yunya.com
-127.0.0.1       zp.yunya.com
-127.0.0.1       bbs.yunya.com          # 论坛主页
-127.0.0.1       rest-bbs.yunya.com     # 论坛 REST 接口
-127.0.0.1       code.yunya.com         #
-127.0.0.1       m.yunya.com
-127.0.0.1       s.yunya.com
-127.0.0.1       new.yunya.com
-127.0.0.1       sv.yunya.com
-127.0.0.1       u.yunya.com
-127.0.0.1       wx-fission.yunya.com
-127.0.0.1       rest-u.yunya.com        # 用户中心 REST
-127.0.0.1       xue.yunya.com           # 学院主页
-127.0.0.1       rest-xue.yunya.com           # 学院主页
-127.0.0.1       admin-bor.yunya.com     # 崛起之战的管理后台
-127.0.0.1       rest-bor.yunya.com      # 崛起之战的 REST 接口
-127.0.0.1       static-bor.yunya.com    # 崛起之战的静态资源
-127.0.0.1       sites.yunya.com         # 查看本地配置的所有项目目录
-127.0.0.1       phpinfo.yunya.com       # 查看 php 环境信息
-127.0.0.1       geekbang.yunya.com      # 极客时间爬虫网站
-127.0.0.1       zcs.yunya.com           # 招财鼠网站
-
-# fecshop
-127.0.0.1       my-shop.yunya.com       # mysql的phpmyadmin的域名指向
-127.0.0.1       admin-shop.yunya.com    # 后台域名指向
-127.0.0.1       front-shop.yunya.com    # 前台pc端域名指向
-127.0.0.1       frontes-shop.yunya.com  # 前台pc端 es 语言的域名指向
-127.0.0.1       html5-shop.yunya.com    # 前台html端的域名指向
-127.0.0.1       rest-shop.yunya.com     # server端的域名指向
-127.0.0.1       api-shop.yunya.com      # api端的域名指向
-127.0.0.1       img-shop.yunya.com      # appimage/common   图片的域名指向
-127.0.0.1       img2-shop.yunya.com     # appimage/appadmin 图片的域名指向
-127.0.0.1       img3-shop.yunya.com     # appimage/appfront 图片的域名指向
-127.0.0.1       img4-shop.yunya.com     # appimage/apphtml5 图片的域名指向
-127.0.0.1       img5-shop.yunya.com     # appimage/appserver图片的域名指向
-
-172.16.0.185    xunsearch
+127.0.0.1    xx.xx.xx
 ```
 
 
