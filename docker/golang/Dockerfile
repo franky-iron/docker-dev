@@ -1,7 +1,5 @@
 FROM golang:1.15.1-buster
 RUN set -ex; \
-
-
     # 换源
     echo "deb http://mirrors.aliyun.com/debian/ buster main non-free contrib" > /etc/apt/sources.list; \
     echo "deb-src http://mirrors.aliyun.com/debian/ buster main non-free contrib" >> /etc/apt/sources.list; \
@@ -18,9 +16,14 @@ RUN set -ex; \
         git \
         vim ;
 
+EXPOSE 2345
+
 #设置go变量
-ENV GO111MODULE on
+ENV GOPATH /go
+ENV GO111MODULE=on
 ENV GOPROXY=https://goproxy.cn,direct
-ENV CGO_ENABLED 0
+ENV CGO_ENABLED=0
+
+RUN go get -u github.com/go-delve/delve/cmd/dlv;
 
 WORKDIR $GOPATH

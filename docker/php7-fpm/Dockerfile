@@ -15,6 +15,7 @@ RUN set -ex; \
     apt-get update; \
     apt-get install -y aptitude; \
     aptitude install -y \
+      wget \
       vim \
       curl \
       git \
@@ -66,7 +67,12 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - ;\
     npm install -g cnpm --registry=https://registry.npm.taobao.org; \
     cnpm install -g bower;
 
+#安装swoole
+RUN wget https://pecl.php.net/get/swoole-4.8.6.tgz \
+    && tar -xzvf swoole-4.8.6.tgz \
+    && mkdir -p /usr/src/php/ext \
+    && cp -r swoole-4.8.6 /usr/src/php/ext/swoole \
+    && docker-php-ext-install swoole;
+
 
 CMD ["php-fpm"]
-
-FROM php-fpm
